@@ -7843,6 +7843,9 @@
                   },
                   "team_ids": {
                     "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
                     "description": "Filters results to channels belonging to the given team ids\n\n__Minimum server version__: 5.26\n"
                   },
                   "group_constrained": {
@@ -16194,7 +16197,6 @@
                     "items": {
                       "type": "string"
                     },
-                    "default": null,
                     "description": "If set to a non-empty array, then users whose IDs are not in the array will be excluded."
                   }
                 }
@@ -20087,6 +20089,9 @@
                   },
                   "team_ids": {
                     "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
                     "description": "Filters results to channels belonging to the given team ids\n"
                   },
                   "public": {
@@ -27056,7 +27061,7 @@
             "description": "Path to the plugin on the server"
           },
           "state": {
-            "type": "number",
+            "type": "string",
             "description": "State of the plugin",
             "enum": [
               "NotRunning",

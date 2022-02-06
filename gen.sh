@@ -1,1 +1,2 @@
-openapi-generator-cli generate -c config.yaml
+openapi-generator-cli generate \
+    -c config.yaml 
